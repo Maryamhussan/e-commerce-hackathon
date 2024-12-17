@@ -1,5 +1,4 @@
 import FooterAbove from "../components/footerabove";
-import { desktoplist } from "../data/desktoplist";
 import { productview } from "../data/productviewcards";
 
 export default function Productview() {

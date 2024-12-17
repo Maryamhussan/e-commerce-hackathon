@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ export default function Header() {
         { name: "Categories", href: "/productlist" },
         { name: "Products", href: "/productview" },
         { name: "Pricing", href: "/pricing" },
-        
+        { name: "Team", href: "/teams" },
       ],
     },
     { name: "About", href: "/about" },

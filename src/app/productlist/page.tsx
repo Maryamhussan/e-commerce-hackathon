@@ -44,7 +44,8 @@ export default function ProductList(){
         <section className="h-[271px] bg-[#FAFAFA]">
           <div className="flex flex-wrap justify-center gap-6 relative">
             {productlist.map((product, index) => (
-              <div className="w-[205px] h-[223px] bg-white shadow-md relative overflow-hidden">
+              <div
+              key={index}  className="w-[205px] h-[223px] bg-white shadow-md relative overflow-hidden">
                 <img
                   src={product.imageUrl}
                   alt={product.title}
@@ -166,43 +167,7 @@ export default function ProductList(){
         </section>
 
         {/* pagination */}
-        {/* <ul className="flex mx-auto border-2 divide-x-2 rounded-lg overflow-hidden w-[313px] h-[74px] ">
-          <li className="flex items-center justify-center shrink-0  px-4 py-2 hover:bg-gray-50 cursor-pointer text-sm text-gray-800">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-3 fill-gray-800 mr-2"
-              viewBox="0 0 55.753 55.753"
-            >
-              <path
-                d="M12.745 23.915c.283-.282.59-.52.913-.727L35.266 1.581a5.4 5.4 0 0 1 7.637 7.638L24.294 27.828l18.705 18.706a5.4 5.4 0 0 1-7.636 7.637L13.658 32.464a5.367 5.367 0 0 1-.913-.727 5.367 5.367 0 0 1-1.572-3.911 5.369 5.369 0 0 1 1.572-3.911z"
-                data-original="#000000"
-              />
-            </svg>
-            First
-          </li>
-          <li className="flex items-center justify-center shrink-0 px-4 py-2 hover:bg-[#23A6F0] cursor-pointer text-base font-bold text-gray-500">
-            1
-          </li>
-          <li className="flex items-center justify-center shrink-0 px-4 py-2 hover:bg-[#23A6F0]  cursor-pointer text-base font-bold text-gray-800">
-            2
-          </li>
-          <li className="flex items-center justify-center shrink-0 px-4 py-2 hover:bg-[#23A6F0] cursor-pointer text-base font-bold text-gray-500">
-            3
-          </li>
-          <li className="flex items-center justify-center shrink-0 px-4 py-2 hover:bg-[#23A6F0] cursor-pointer text-sm text-gray-800">
-            Next
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-3 fill-gray-800 ml-2 rotate-180"
-              viewBox="0 0 55.753 55.753"
-            >
-              <path
-                d="M12.745 23.915c.283-.282.59-.52.913-.727L35.266 1.581a5.4 5.4 0 0 1 7.637 7.638L24.294 27.828l18.705 18.706a5.4 5.4 0 0 1-7.636 7.637L13.658 32.464a5.367 5.367 0 0 1-.913-.727 5.367 5.367 0 0 1-1.572-3.911 5.369 5.369 0 0 1 1.572-3.911z"
-                data-original="#000000"
-              />
-            </svg>
-          </li>
-        </ul> */}
+       
         <ul className="flex mx-auto border-2  divide-x rounded-lg overflow-hidden w-max h-[74px] mb-[75px] mt-[25px] ">
           {/* First Button */}
           <li className="flex items-center justify-center px-6 py-3 text-sm text-[#23A6F0] font-semibold hover:bg-[#23A6F0] hover:text-white cursor-pointer">
