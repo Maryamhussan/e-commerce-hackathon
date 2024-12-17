@@ -14,14 +14,14 @@ export default function Header() {
       name: "Shop",
       href: "/shop",
       dropdown: [
-        { name: "Men's Fashion", href: "/shop/mens" },
-        { name: "Women's Fashion", href: "/shop/womens" },
-        { name: "Kids Collection", href: "/shop/kids" },
-        { name: "Accessories", href: "/shop/accessories" },
+        { name: "Categories", href: "/productlist" },
+        { name: "Products", href: "/productview" },
+        { name: "Pricing", href: "/pricing" },
+        
       ],
     },
     { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blog", href: "#blog" },
     { name: "Contact", href: "/contact" },
     { name: "Pages", href: "/pages" },
   ];
