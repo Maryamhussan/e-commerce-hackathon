@@ -167,10 +167,10 @@ export default function Contact() {
             className="mx-auto mb-4 max-w-[200px] md:max-w-full"
           />
           <h5 className="font-montserrat text-center text-lg md:text-2xl font-bold leading-6 tracking-wide text-[#252B42] mb-4">
-            WE Can't WAIT TO MEET YOU
+            WE Can&rsquo;t WAIT TO MEET YOU
           </h5>
           <h1 className="font-montserrat text-center text-4xl md:text-[58px] font-bold leading-tight tracking-wide text-[#252B42] mb-6">
-            Let's Talk
+            Let&rsquo;s Talk
           </h1>
           <button className="w-full md:w-[186px] h-[52px] rounded-[5px] py-[15px] px-[40px] bg-[#23A6F0] font-monsterrat font-bold text-white text-center text-[14px] mx-auto block hover:bg-[#1E90FF] transition-colors">
             Try it free now

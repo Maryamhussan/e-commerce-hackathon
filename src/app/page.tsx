@@ -52,7 +52,7 @@ export default function Home() {
           {/* Title Section */}
           <div className="pt-[60px] text-center">
             <h3 className="font-montserrat text-2xl font-bold leading-[32px] tracking-[0.1px] text-[#252B42]">
-              EDITOR'S PICK
+              EDITOR&rsquo;S PICK
             </h3>
             <p className="font-montserrat text-sm font-normal leading-[20px] tracking-[0.2px] text-[#737373] mt-2">
               Problems trying to resolve the conflict between
@@ -238,7 +238,7 @@ export default function Home() {
                 {/* Button */}
                 <button
                   type="button"
-                  className="w-full md:w-[221px] h-[62px] rounded-[5px] text-white text-base tracking-wider font-semibold bg-[#2DC071] hover:bg-[#2DC012] border-none transition-all duration-300"
+                  className="w-full md:w-[221px] sm:w-[221px] h-[62px] rounded-[5px] text-white text-base tracking-wider font-semibold bg-[#2DC071] hover:bg-[#2DC012] border-none transition-all duration-300"
                 >
                   Add to Cart
                 </button>
