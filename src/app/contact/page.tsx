@@ -3,178 +3,114 @@ import Link from "next/link";
 export default function Contact() {
     return (
       <>
-        {/* 1section */}
-
-        <div className="relative flex flex-col-reverse lg:flex-row bg-white min-h-[669px]">
-          {/* Image Section */}
-          <div className="lg:absolute lg:right-0 lg:top-1/2 lg:transform lg:-translate-y-1/2 w-full lg:w-auto">
+        {/* 1section (Hero) */}
+        <div className="relative w-full min-h-[600px] flex items-center bg-white overflow-hidden">
+          {/* Background Image Container */}
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-full md:w-1/2 h-full opacity-30 md:opacity-100">
             <img
               src="/contact/main.png"
-              alt="Contact"
-              className="w-full lg:w-auto max-h-[669px] object-cover lg:object-contain"
+              alt="Contact Hero"
+              className="w-full h-full object-contain object-center"
             />
           </div>
 
-          {/* Content Section */}
-          <div
-            className="w-full lg:w-[599px] px-4 lg:px-0 py-12 lg:py-0 
-        flex flex-col gap-6 
-        lg:ml-[195px] lg:mt-[150px]
-        items-start lg:items-start"
-          >
-            {/* Section Title */}
-            <h5 className="font-montserrat text-text-white font-bold leading-6 tracking-tight text-left">
-              CONTACT US
-            </h5>
-
-            {/* Main Heading */}
-            <h1
-              className="font-montserrat text-[#252B42] font-bold tracking-tight text-left 
-          text-4xl lg:text-[58px] leading-tight"
-            >
-              Get in touch <br /> today!
-            </h1>
-
-            {/* Subheading */}
-            <h4
-              className="font-montserrat text-lg font-normal leading-[30px] 
-          text-[#737373] tracking-wide text-left"
-            >
-              We know how large objects will act, <br /> but things on a small
-              scale
-            </h4>
-
-            {/* Contact Details */}
-            <div className="space-y-2">
-              <h3 className="font-montserrat text-2xl font-bold text-[#252B42] text-left">
-                Phone : +451 215 215
-              </h3>
-              <h3 className="font-montserrat text-2xl font-bold text-[#252B42] text-left">
-                Fax : +451 215 215
-              </h3>
-            </div>
-
-            {/* Social Media Icons */}
-            <div className="flex items-center gap-6 w-full justify-start">
-              <Link href="/" target="_blank">
-                <img
-                  src="/contact/tw.png"
-                  alt="Twitter"
-                  className="w-[30px] h-[30px] hover:opacity-75 transition-opacity"
-                />
-              </Link>
-              <Link href="/" target="_blank">
-                <img
-                  src="/contact/fc.png"
-                  alt="Facebook"
-                  className="w-[30px] h-[30px] hover:opacity-75 transition-opacity"
-                />
-              </Link>
-              <Link href="/" target="_blank">
-                <img
-                  src="/pricing/instagram.png"
-                  alt="Instagram"
-                  className="w-[30px] h-[30px] hover:opacity-75 transition-opacity"
-                />
-              </Link>
-              <Link href="/" target="_blank">
-                <img
-                  src="/contact/in.png"
-                  alt="LinkedIn"
-                  className="w-[30px] h-[30px] hover:opacity-75 transition-opacity"
-                />
-              </Link>
+          {/* Content Container */}
+          <div className="container mx-auto px-4 md:px-16 lg:px-24 relative z-10 py-20">
+            <div className="max-w-xl text-center md:text-left space-y-6">
+              <h5 className="font-montserrat text-[#252B42] font-bold tracking-widest uppercase">
+                CONTACT US
+              </h5>
+              <h1 className="font-montserrat text-[#252B42] font-bold text-4xl md:text-6xl leading-tight">
+                Get in touch <br className="hidden md:block" /> today!
+              </h1>
+              <h4 className="font-montserrat text-lg text-[#737373] max-w-sm mx-auto md:mx-0">
+                We know how large objects will act, but things on a small scale
+              </h4>
+              <div className="space-y-2 pt-4">
+                <h3 className="text-2xl font-bold text-[#252B42]">Phone : +451 215 215</h3>
+                <h3 className="text-2xl font-bold text-[#252B42]">Fax : +451 215 215</h3>
+              </div>
+              <div className="flex justify-center md:justify-start gap-6 pt-6">
+                 <Link href="https://twitter.com" className="hover:opacity-75 transition"><img src="/contact/tw.png" alt="tw" className="w-8 h-8"/></Link>
+                 <Link href="https://twitter.com" className="hover:opacity-75 transition"><img src="/contact/fc.png" alt="fb" className="w-8 h-8"/></Link>
+                 <Link href="https://twitter.com" className="hover:opacity-75 transition"><img src="/pricing/instagram.png" alt="ig" className="w-8 h-8"/></Link>
+                 <Link href="https://twitter.com" className="hover:opacity-75 transition"><img src="/contact/in.png" alt="in" className="w-8 h-8"/></Link>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* section2 */}
-
-        <section className="w-full bg-white py-16">
-          <p className="text-[#252B42] text-[14px] text-center font-bold font-monsterrat mb-6 mt-[150px]">
-            VISIT OUR OFFICE
-          </p>
-          <h2 className="text-[#252B42] text-[40px] text-center font-bold font-monsterrat mb-4">
-            We help small businesses <br /> with big ideas
-          </h2>
-          <div className="flex flex-col md:flex-row items-center my-[100px] justify-center px-4 sm:px-6 lg:px-8 space-y-6 md:space-y-0 md:space-x-4">
-            <div className="text-center bg-white w-full md:w-[329px] h-auto md:h-[327px] py-10 grid justify-center items-center">
-              <img src="/contact/phone.png" alt="" className="mx-auto mb-4" />
-              <Link
-                href="tel:georgia.young@example.com"
-                className="block text-[#252B42] text-[14px] text-center font-bold font-monsterrat mb-2"
-              >
-                georgia.young@example.com
-                <br />
-                georgia.young@ple.com
-              </Link>
-              <p className="text-[#252B42] text-[16px] text-center font-bold font-monsterrat mb-4">
-                Get Support
-              </p>
-              <button className="border border-[1px] border-[#23A6F0] h-[54px] w-[189px] text-[#23A6F0] font-bold text-center text-[14px] font-monsterrat py-[15px] px-[36px] rounded-[37px] hover:bg-[#23A6F0] hover:text-white transition-colors">
-                Submit Request
-              </button>
+        {/* section2 (Offices) */}
+        <section className="w-full bg-[#FAFAFA] py-24">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <p className="text-[#252B42] text-sm font-bold uppercase tracking-widest mb-4">VISIT OUR OFFICE</p>
+              <h2 className="text-[#252B42] text-4xl font-bold max-w-xl mx-auto leading-tight">
+                We help small businesses with big ideas
+              </h2>
             </div>
-
-            <div className="w-full md:w-[328px] bg-[#252B42] flex items-center justify-center">
-              <div className="text-center w-full md:w-[329px] h-auto md:h-[403px] py-10 grid justify-center items-center">
-                <img
-                  src="/contact/locatiom.png"
-                  alt=""
-                  className="mx-auto mb-4"
-                />
-                <Link
-                  href="tel:georgia.young@example.com"
-                  className="block text-white text-[14px] text-center font-bold font-monsterrat mb-2"
-                >
-                  georgia.young@example.com
-                  <br />
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 max-w-6xl mx-auto items-center">
+              {/* Phone Office */}
+              <div className="bg-white p-12 text-center space-y-4 shadow-sm hover:shadow-md transition">
+                <img src="/contact/phone.png" alt="phone" className="mx-auto" />
+                <div className="text-[#252B42] text-sm font-bold">
+                  georgia.young@example.com<br />
                   georgia.young@ple.com
+                </div>
+                <p className="text-[#252B42] text-base font-bold">Get Support</p>
+                <Link href="/contact">
+                  <button className="border-2 border-[#23A6F0] text-[#23A6F0] px-8 py-4 rounded-full font-bold hover:bg-[#23A6F0] hover:text-white transition uppercase text-xs">
+                    Submit Request
+                  </button>
                 </Link>
-                <p className="text-white text-[16px] text-center font-bold font-monsterrat mb-4">
-                  Get Support
-                </p>
-                <button className="border border-[1px] border-[#23A6F0] h-[54px] w-[189px] text-[#23A6F0] font-bold text-center text-[14px] font-monsterrat py-[15px] px-[36px] rounded-[37px] hover:bg-white hover:text-[#23A6F0] transition-colors">
-                  Submit Request
-                </button>
               </div>
-            </div>
 
-            <div className="text-center bg-white w-full md:w-[329px] h-auto md:h-[327px] py-10 grid justify-center items-center">
-              <img src="/contact/email.png" alt="" className="mx-auto mb-4" />
-              <Link
-                href="tel:georgia.young@example.com"
-                className="block text-[#252B42] text-[14px] text-center font-bold font-monsterrat mb-2"
-              >
-                georgia.young@example.com
-                <br />
-                georgia.young@ple.com
-              </Link>
-              <p className="text-[#252B42] text-[16px] text-center font-bold font-monsterrat mb-4">
-                Get Support
-              </p>
-              <button className="border border-[1px] border-[#23A6F0] h-[54px] w-[189px] text-[#23A6F0] font-bold text-center text-[14px] font-monsterrat py-[15px] px-[36px] rounded-[37px] hover:bg-[#23A6F0] hover:text-white transition-colors">
-                Submit Request
-              </button>
+              {/* Location Office (Highlight) */}
+              <div className="bg-[#252B42] p-16 text-center space-y-4 shadow-xl z-10 md:scale-110">
+                <img src="/contact/locatiom.png" alt="location" className="mx-auto" />
+                <div className="text-white text-sm font-bold">
+                  georgia.young@example.com<br />
+                  georgia.young@ple.com
+                </div>
+                <p className="text-white text-base font-bold">Get Support</p>
+                <Link href="/contact">
+                  <button className="border-2 border-[#23A6F0] text-[#23A6F0] px-8 py-4 rounded-full font-bold hover:bg-[#23A6F0] hover:text-white transition uppercase text-xs">
+                    Submit Request
+                  </button>
+                </Link>
+              </div>
+
+              {/* Email Office */}
+              <div className="bg-white p-12 text-center space-y-4 shadow-sm hover:shadow-md transition">
+                <img src="/contact/email.png" alt="email" className="mx-auto" />
+                <div className="text-[#252B42] text-sm font-bold">
+                  georgia.young@example.com<br />
+                  georgia.young@ple.com
+                </div>
+                <p className="text-[#252B42] text-base font-bold">Get Support</p>
+                <Link href="/contact">
+                  <button className="border-2 border-[#23A6F0] text-[#23A6F0] px-8 py-4 rounded-full font-bold hover:bg-[#23A6F0] hover:text-white transition uppercase text-xs">
+                    Submit Request
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
-        {/* 3section */}
-        <div className="w-full min-h-[348px] bg-white mb-12 grid items-center justify-center py-12 px-4">
-          <img
-            src="/contact/Arrow 2.png"
-            alt="Arrow"
-            className="mx-auto mb-4 max-w-[200px] md:max-w-full"
-          />
-          <h5 className="font-montserrat text-center text-lg md:text-2xl font-bold leading-6 tracking-wide text-[#252B42] mb-4">
-            WE Can&rsquo;t WAIT TO MEET YOU
-          </h5>
-          <h1 className="font-montserrat text-center text-4xl md:text-[58px] font-bold leading-tight tracking-wide text-[#252B42] mb-6">
-            Let&rsquo;s Talk
-          </h1>
-          <button className="w-full md:w-[186px] h-[52px] rounded-[5px] py-[15px] px-[40px] bg-[#23A6F0] font-monsterrat font-bold text-white text-center text-[14px] mx-auto block hover:bg-[#1E90FF] transition-colors">
-            Try it free now
-          </button>
+
+        {/* 3section (CTA) */}
+        <div className="w-full bg-white py-24 text-center">
+          <div className="container mx-auto px-4">
+            <img src="/contact/Arrow 2.png" alt="Arrow" className="mx-auto mb-8" />
+            <h5 className="text-[#252B42] font-bold text-base uppercase tracking-widest mb-4">WE Can&rsquo;t WAIT TO MEET YOU</h5>
+            <h1 className="text-[#252B42] font-bold text-5xl md:text-6xl mb-8">Let&rsquo;s Talk</h1>
+            <Link href="/shop">
+              <button className="bg-[#23A6F0] text-white px-12 py-4 rounded-md font-bold hover:bg-[#1a7bb3] transition shadow-lg uppercase text-sm">
+                Try it free now
+              </button>
+            </Link>
+          </div>
         </div>
       </>
     );

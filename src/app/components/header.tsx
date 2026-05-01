@@ -21,7 +21,7 @@ export default function Header() {
       ],
     },
     { name: "About", href: "/about" },
-    { name: "Blog", href: "#blog" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
     { name: "Pages", href: "/pages" },
   ];
