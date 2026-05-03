@@ -154,7 +154,7 @@ export default function About(){
           <div className="container mx-auto px-4 md:px-16 lg:px-24 relative z-10 py-20">
              <div className="max-w-xl text-center md:text-left space-y-6">
                 <h5 className="text-white font-bold tracking-widest uppercase">WORK WITH US</h5>
-                <h1 className="text-white font-bold text-4xl md:text-6xl leading-tight">Now Let's grow Yours</h1>
+                <h1 className="text-white font-bold text-4xl md:text-6xl leading-tight">Now Let&apos;s grow Yours</h1>
                 <p className="text-white text-sm md:text-base leading-7 max-w-sm mx-auto md:mx-0">
                   The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th
                 </p>
